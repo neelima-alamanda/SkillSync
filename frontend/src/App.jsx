@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import SkillAssessment from './components/student/SkillAssessment'
+import './App.css'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('dashboard')

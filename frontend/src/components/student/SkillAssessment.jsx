@@ -4,6 +4,7 @@ const skills = [
   'JavaScript',
   'React',
   'Python',
+  'Flask',
   'SQL',
   'Git',
 ]
