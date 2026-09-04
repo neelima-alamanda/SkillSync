@@ -1,4 +1,6 @@
 function ProfileForm({ profile, onChange, onSubmit }) {
+  const currentYear = new Date().getFullYear()
+
   const handleChange = (event) => {
     const { name, value } = event.target
 
@@ -8,8 +10,23 @@ function ProfileForm({ profile, onChange, onSubmit }) {
     })
   }
 
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const graduationYear = Number(profile.graduationYear)
+
+    if (
+      profile.graduationYear &&
+      (graduationYear < currentYear || graduationYear > currentYear + 10)
+    ) {
+      return
+    }
+
+    onSubmit(event)
+  }
+
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Full Name</label>
         <input
@@ -42,6 +59,8 @@ function ProfileForm({ profile, onChange, onSubmit }) {
           type="tel"
           value={profile.phone}
           onChange={handleChange}
+          pattern="[0-9]{10}"
+          title="Enter a 10-digit phone number"
         />
       </div>
 
@@ -75,6 +94,9 @@ function ProfileForm({ profile, onChange, onSubmit }) {
           type="number"
           value={profile.graduationYear}
           onChange={handleChange}
+          min={currentYear}
+          max={currentYear + 10}
+          title={`Enter a graduation year between ${currentYear} and ${currentYear + 10}`}
         />
       </div>
 

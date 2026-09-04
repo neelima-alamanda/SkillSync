@@ -24,3 +24,19 @@ def get_student(student_id):
         "success": True,
         "data": student.to_dict()
     }), 200
+
+
+@student_bp.get("/<int:student_id>/skills")
+def get_student_skills(student_id):
+    student = Student.query.get(student_id)
+
+    if student is None:
+        return jsonify({
+            "success": False,
+            "error": "Student not found"
+        }), 404
+
+    return jsonify({
+        "student_id": student.id,
+        "skills": student.skills or {}
+    }), 200
