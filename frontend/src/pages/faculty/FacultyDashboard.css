@@ -1,0 +1,314 @@
+.faculty-dashboard {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.faculty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #667085;
+}
+
+.faculty-header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.header-description {
+  max-width: 680px;
+  margin: 10px 0 0;
+  color: #667085;
+  line-height: 1.6;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button,
+.text-button,
+.learn-button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.primary-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.secondary-button {
+  padding: 12px 18px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: white;
+  color: #344054;
+  font-weight: 600;
+}
+
+.faculty-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.faculty-stat-card {
+  padding: 22px;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+}
+
+.faculty-stat-card p {
+  margin: 0 0 10px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.faculty-stat-card h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.faculty-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.faculty-section {
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+}
+
+.faculty-main-grid .faculty-section {
+  padding: 24px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.text-button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.opportunity-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-opportunity-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 0;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.faculty-opportunity-row:last-child {
+  border-bottom: none;
+}
+
+.opportunity-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: #e8eefc;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.opportunity-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.opportunity-info h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.opportunity-info p {
+  margin: 0 0 7px;
+  color: #475467;
+  font-size: 14px;
+}
+
+.opportunity-meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: #667085;
+  font-size: 12px;
+}
+
+.open-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #027a48;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-action-card {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 11px;
+  border: 1px solid #eaecf0;
+  border-radius: 11px;
+  background: #fafafa;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faculty-action-card:last-child {
+  margin-bottom: 0;
+}
+
+.faculty-action-card:hover {
+  border-color: #b2c7f7;
+  background: #f8faff;
+}
+
+.faculty-action-card strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #172033;
+}
+
+.faculty-action-card span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.activity-section {
+  padding: 24px;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.activity-card {
+  padding: 20px;
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+}
+
+.activity-tag {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #eff8ff;
+  color: #175cd3;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.activity-card h3 {
+  margin: 15px 0 8px;
+  font-size: 17px;
+}
+
+.activity-card p {
+  min-height: 45px;
+  margin: 0 0 18px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.learn-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .faculty-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faculty-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .faculty-dashboard {
+    padding: 20px;
+  }
+
+  .faculty-header {
+    flex-direction: column;
+  }
+
+  .faculty-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-opportunity-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .open-badge {
+    margin-left: 60px;
+  }
+}
