@@ -71,7 +71,7 @@ def seed_database():
             "Python Developer",
             "TechNova",
             "Develop backend applications using Python and Flask.",
-            ["Python", "Flask", "SQL"],
+            {"Python": 70, "Flask": 60, "SQL": 50},
             "Hyderabad",
             "Full-time"
         ),
@@ -79,7 +79,7 @@ def seed_database():
             "Data Analyst",
             "DataWorks",
             "Analyze business data and create useful dashboards.",
-            ["Python", "SQL", "Power BI"],
+            {"Python": 80, "SQL": 70, "Power BI": 65},
             "Bangalore",
             "Internship"
         )
