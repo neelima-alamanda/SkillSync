@@ -2,8 +2,7 @@ import sqlite3
 import json
 from pathlib import Path
 
-
-DATABASE_PATH = Path(__file__).resolve().parent.parent / "skillsync.db"
+DATABASE_PATH = Path(__file__).resolve().parent.parent / "instance" / "skillsync.db"
 
 
 def seed_database():
@@ -21,7 +20,7 @@ def seed_database():
             "Computer Science",
             2027,
             "Software Developer",
-            ["Python", "Flask", "SQL"]
+            {"Python": 80, "Flask": 60, "SQL": 70}
         ),
         (
             "Rahul",
@@ -32,7 +31,7 @@ def seed_database():
             "Information Technology",
             2026,
             "Data Analyst",
-            ["Python", "SQL", "Power BI"]
+            {"Python": 80, "SQL": 70, "Power BI": 65}
         )
     ]
 
